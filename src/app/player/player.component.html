@@ -1,0 +1,8 @@
+<app-onecommon></app-onecommon>
+<p>
+  Players
+</p>
+
+<p-dataTable [value]="players">
+    <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header" [sortable]="true"></p-column>
+</p-dataTable>
